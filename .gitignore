@@ -1,0 +1,4 @@
+*.swp
+.jekyll-cache
+_site/
+run_local_server.sh
