@@ -1,3 +1,5 @@
-# AIEmbassy.github.io
+# embassy.ai
 
-Will be embassy.ai in the future
+AI Embassy
+Rynek Główny 28
+Kraków 31-010
