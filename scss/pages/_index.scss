@@ -1,0 +1,127 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f9f9f9;
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    height: calc(100vh - 200px);
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    @include respond-to(sm) {
+        min-height: calc(100vh + 100px);
+        padding: 50px 0 100px;
+        text-align: center;
+    }
+    @include respond-to(xs) {
+        min-height: 100vh;
+        padding: 50px 0;
+        text-align: center;
+    }
+    h1 {
+        color: #d7c4a3;
+        font-family: 'Sriracha', cursive;
+        font-size: 130px;
+        margin-bottom: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        @include respond-to(sm) {
+            font-size: 70px;
+        }
+
+        span {
+            color: #006666;
+        }
+    }
+
+    &__image {
+        img {
+            max-height: 250px;
+            @include respond-to(lg) {
+                max-height: 200px;
+            }
+
+            @include respond-to(sm) {
+                max-height: initial;
+                max-width: 220px;
+            }
+        }
+    }
+
+    i {
+        @include center(horizontal);
+        bottom: 30px;
+        color: #006666;
+        font-size: 40px;
+    }
+}
+
+.footer {
+    background: $white;
+    bottom: 0;
+    padding: 40px 15px;
+    position: absolute;
+    width: 100%;
+    @include respond-to(sm) {
+        position: static;
+        text-align: center;
+    }
+
+    &__wrapper {
+        max-width: 1300px;
+    }
+
+    img {
+        @include transition;
+        filter: grayscale(85%);
+        max-width: 150px;
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+
+    h3 {
+        color: #d7c4a3;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        position: relative;
+
+        &:before {
+            background: #d7c4a3;
+            bottom: 5px;
+            content: '';
+            height: 2px;
+            left: 0;
+            position: absolute;
+            width: 50px;
+            @include respond-to(sm) {
+               left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    p {
+        color: #333;
+        line-height: 24px;
+        font-size: 14px;
+        margin-bottom: 0;
+        @include respond-to(sm) {
+            margin-bottom: 30px;
+        }
+    }
+
+    a {
+        @include transition;
+        color: #333;
+        @include events {
+            color: #d7c4a3;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+// colors
+$black: #000000;
+$blue: #18337f;
+$dark-grey: #333333;
+$gray: #696969;
+$violet: #654990;
+$violet_dark: #5d2b7d;
+$white: #ffffff;
+
+//responsive
+$breakpoints: (
+  'xs': (max-width: 575px),
+  'sm': (max-width: 767px),
+  'md': (max-width: 991px),
+  'lg': (max-width: 1199px),
+  'xl': (max-width: 1599px),
+  'hxs': (max-height: 400px),
+  'hsm': (max-height: 599px),
+  'hmd': (max-height: 699px),
+  'hlg': (max-height: 768px),
+  'hxl': (min-height: 769px)
+);
